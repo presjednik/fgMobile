@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    >
+
+      <ImageView
+        android:id="@+id/imageUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:onClick="banda"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/banda"
+        android:background="@drawable/header_button" />
+    
+     <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:paddingTop="16dp"
+        android:onClick="profil"
+        android:paddingBottom="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/profile" 
+        android:background="@drawable/header_button" />
+    
+    
+      <ImageView
+        android:id="@+id/imageBuksa"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:contentDescription="@string/app_name"
+        android:clickable="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:onClick="buksa"
+        android:src="@drawable/buksa"
+        android:background="@drawable/header_button" />
+    
+    <ImageView
+        android:id="@+id/imageNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:onClick="notify"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/notification"
+        android:background="@drawable/header_button" />
+
+
+</LinearLayout>

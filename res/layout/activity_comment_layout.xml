@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/l"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/comment_add_form"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#99E699"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/newComment"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:autoLink="web"
+            android:background="@drawable/black_form"
+            android:hint="@string/post_hint"
+            android:inputType="textCapSentences"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/btnNewComment"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black_button"
+            android:text="@string/button_post_comment"
+            android:textColor="#ffffff"
+            android:textSize="10sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnCommentLoadImg"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black_button"
+            android:text="@string/photo"
+            android:textColor="#ffffff"
+            android:textSize="10sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnCancelComment"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black_button"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textSize="10sp" >
+        </Button>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/newCommentImg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:clickable="true"
+        android:contentDescription="@string/cancel"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/comments_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </ScrollView>
+
+</LinearLayout>

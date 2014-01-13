@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal" >
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/grey_form"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/grey_form"
+        android:ems="10"
+        android:hint="@string/username_hint"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignTop="@+id/username"
+        android:layout_marginLeft="28dp"
+        android:layout_toRightOf="@+id/password"
+        android:background="@drawable/green_button"
+        android:text="@string/login"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/login"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/fg_logo"
+        android:src="@drawable/fenster_comic" />
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/login"
+        android:layout_alignTop="@+id/login"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/login"
+        android:background="@drawable/green_button"
+        android:focusable="false"
+        android:linksClickable="true"
+        android:longClickable="false"
+        android:text="@string/reg"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
